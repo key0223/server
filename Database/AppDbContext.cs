@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SharedData.Model;
+﻿using addkeyserver.DTO;
+using Microsoft.EntityFrameworkCore;
 
 namespace addkeyserver.Database
 {

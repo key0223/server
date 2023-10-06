@@ -1,5 +1,6 @@
 using addkeyserver.Database;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using StackExchange.Redis;
@@ -73,6 +74,10 @@ app.UseHttpsRedirection();
 */
 
 var app = builder.Build();
+app.UseForwardedHeaders(new ForwardedHeadersOptions()
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
 
 //Jwt ฐüทร
 app.UseAuthentication();

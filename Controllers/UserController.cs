@@ -1,12 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using SharedData.Model;
-using SharedData.DTO;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
 using addkeyserver.Database;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
@@ -14,7 +8,8 @@ using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using IDatabase = StackExchange.Redis.IDatabase;
 using Newtonsoft.Json;
-using System.Numerics;
+using static addkeyserver.DTO.DTO;
+using addkeyserver.DTO;
 
 namespace addkeyserver.Controllers
 {

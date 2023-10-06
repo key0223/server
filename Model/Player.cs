@@ -9,7 +9,7 @@ using System.Threading.Tasks;
  * NP (Navigation Property) - 다른 클래스를 가르키는 key
  * FK (Foreign key) -  한 테이블의 컬럼이 다른 테이블의 PK
 */
-namespace SharedData.Model
+namespace addkeyserver.DTO
 {
     public class UserDb
     {
